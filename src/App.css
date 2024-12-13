@@ -1,6 +1,19 @@
 body {
   background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+
 }
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  background-color: #121212;
+  min-height: 100vh;
+}
+
 
 h2 {
   margin-left: 1rem;
@@ -47,4 +60,35 @@ h2 {
 
 .read-the-docs {
   color: #888;
+}
+.navbar {
+  background-color: #121212 !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #aaa !important;
+}
+
+.nav-link.active {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.btn-danger {
+  background-color: #ff3b30;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #e53935;
 }

@@ -1,29 +1,45 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import logo from '../assets/logos/apple.svg'; 
+import './Header.css'; 
+import { BsPlayFill, BsSkipForwardFill, BsSkipBackwardFill } from 'react-icons/bs'; 
 
 const Header = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="py-3">
-      <Container>
-        <Navbar.Brand href="#">
+    <Navbar bg="dark" variant="dark" expand="lg" className="py-2">
+      <Container fluid className="d-flex justify-content-between align-items-center">
+
+        <div className="d-flex align-items-center controls">
+          <Button variant="outline-light" className="me-2">
+            <BsSkipBackwardFill size={20} />
+          </Button>
+          <Button variant="outline-light" className="me-2">
+            <BsPlayFill size={24} />
+          </Button>
+          <Button variant="outline-light">
+            <BsSkipForwardFill size={20} />
+          </Button>
+        </div>
+
+        <Navbar.Brand href="#" className="mx-auto">
           <img
             src={logo}
-            alt="Logo"
-            width="30"
+            alt="Apple Music Logo"
             height="30"
-            className="d-inline-block align-top me-2"
+            className="d-block"
           />
-          Music
         </Navbar.Brand>
-        <Nav className="ml-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#" className="active">Novità</Nav.Link>
-          <Nav.Link href="#">Radio</Nav.Link>
+
+        <Nav>
+          <Button variant="danger" className="px-4">
+            Accedi
+          </Button>
         </Nav>
+
       </Container>
     </Navbar>
   );
 };
 
 export default Header;
+

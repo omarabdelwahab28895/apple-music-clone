@@ -1,0 +1,33 @@
+  .navbar {
+    background-color: #121212 !important;
+    border-bottom: 1px solid #1c1c1e;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .controls .btn {
+    background-color: #1c1c1e;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .controls .btn:hover {
+    background-color: #2c2c2e;
+  }
+  
+  .btn-danger {
+    background-color: #ff3b30;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-danger:hover {
+    background-color: #e53935;
+  }
+    

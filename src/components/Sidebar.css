@@ -1,0 +1,28 @@
+
+  .sidebar {
+    width: 220px;
+    background-color: #121212;
+    height: 100vh;
+    padding-top: 1rem;
+  }
+  
+  .sidebar img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sidebar .nav-link {
+    font-size: 1.2rem;
+    color: #aaa !important;
+    transition: color 0.3s;
+  }
+  
+  .sidebar .nav-link.active {
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  .sidebar .nav-link:hover {
+    color: white !important;
+  }
+  
