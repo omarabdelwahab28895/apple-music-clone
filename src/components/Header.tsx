@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
-import logo from '../assets/logos/apple.svg'; 
-import './Header.css'; 
-import { BsPlayFill, BsSkipForwardFill, BsSkipBackwardFill } from 'react-icons/bs'; 
+import logo from '../assets/logos/apple.svg';
+import './Header.css';
+import { BsPlayFill, BsSkipForwardFill, BsSkipBackwardFill } from 'react-icons/bs';
 
 const Header = () => {
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           </Button>
         </div>
 
-        <Navbar.Brand href="#" className="mx-auto">
+        <Navbar.Brand href="#" className="mx-auto navbar-logo">
           <img
             src={logo}
             alt="Apple Music Logo"
@@ -42,4 +42,3 @@ const Header = () => {
 };
 
 export default Header;
-

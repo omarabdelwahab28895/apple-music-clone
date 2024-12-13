@@ -4,6 +4,21 @@
     padding: 0.5rem 1rem;
   }
   
+  .navbar-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: grey; 
+  }
+
+  .navbar-logo img {
+    width: 24px;            
+    height: auto;
+  }
+
   .navbar-brand img {
     max-height: 40px;
   }
@@ -30,4 +45,3 @@
   .btn-danger:hover {
     background-color: #e53935;
   }
-    
